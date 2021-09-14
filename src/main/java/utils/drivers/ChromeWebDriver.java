@@ -13,6 +13,10 @@ public class ChromeWebDriver {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--start-maximized");
+        options.addArguments("--disable-extensions");
+        options.addArguments("--enable-javascript");
+
+
         if(ConfigReader.getProperty("headless").equalsIgnoreCase("true"))
             options.addArguments("--headless");
 

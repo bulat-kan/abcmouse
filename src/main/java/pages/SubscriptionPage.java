@@ -10,29 +10,26 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.DriverManager;
 import utils.helpers.Helper;
 
-public class ProspectRegisterPage {
+public class SubscriptionPage {
     WebDriver driver;
 
-    public ProspectRegisterPage() {
+    public SubscriptionPage() {
         this.driver = DriverManager.getDriver();
         ElementFieldDecorator decorator = new ElementFieldDecorator(new DefaultElementLocatorFactory(driver));
         // need to use decorator if you want to use @FindElementBy in your PageFactory model.
         PageFactory.initElements(decorator, this);
     }
 
-    @FindElementBy(css = "input[placeholder='Email Address']")
-    private WebElement txtBxEmail;
+    @FindElementBy(css = ".page-tag")
+    private WebElement h1Member;
 
-    @FindElementBy(css = ".blue.button")
-    private WebElement btnSubmit;
-
-    public void submitEmail(String email){
-        txtBxEmail.sendKeys(email);
-        btnSubmit.click();
-    }
 
     public String getCurrentUrl(){
-        Helper.waitUntil().until(ExpectedConditions.urlContains("prospect-register/"));
+        Helper.waitUntil().until(ExpectedConditions.urlContains("/subscription"));
         return driver.getCurrentUrl();
+    }
+
+    public String getMessage(){
+        return h1Member.getText();
     }
 }

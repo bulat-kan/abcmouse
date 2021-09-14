@@ -1,7 +1,6 @@
 package utils.drivers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import jdk.nashorn.internal.runtime.regexp.joni.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
