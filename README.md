@@ -1,6 +1,7 @@
 # abcmouse
 
 
+Assignment #1
 
 About the project:
 It’s a Maven project, Scenario written in Gherkin Language using Cucumber, Selenium WebDriver is used to control the browser, 
@@ -16,3 +17,13 @@ In the console you’ll see:
 Actual and Expected Results
 Cucumber html report will be generated and placed in test-output/SparkReport/CucumberReport.html
 
+
+Assignment #2
+
+run the test in 
+
+src/main/java/ReverseArray.java.  
+
+To ABC MOUSE
+
+    Thank you for the apportunity ! 
