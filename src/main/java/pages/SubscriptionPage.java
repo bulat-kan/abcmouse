@@ -30,6 +30,7 @@ public class SubscriptionPage {
     }
 
     public String getMessage(){
+        Helper.highlightElement(h1Member);
         return h1Member.getText();
     }
 }

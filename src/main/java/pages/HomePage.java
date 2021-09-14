@@ -6,8 +6,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.DefaultElementLocatorFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.ConfigReader;
 import utils.DriverManager;
+import utils.helpers.Helper;
 
 public class HomePage {
     WebDriver driver;
@@ -26,6 +28,8 @@ public class HomePage {
     }
 
     public void signUP(){
+        Helper.waitUntil().until(ExpectedConditions.visibilityOf(btnSignUp));
+        Helper.highlightElement(btnSignUp);
         btnSignUp.click();
     }
 

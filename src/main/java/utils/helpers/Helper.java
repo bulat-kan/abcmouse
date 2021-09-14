@@ -30,7 +30,7 @@ public class Helper {
 
     // highlighter of your demo
     public static void highlightElement(WebElement element) {
-        String style = "border: 4px dashed blue";
+        String style = "border: 8px dashed green";
         js.executeScript("arguments[0].setAttribute('style', arguments[1]);", element, style);
         try {
             Thread.sleep(1000);
@@ -56,7 +56,7 @@ public class Helper {
     }
 
     public static WebDriverWait waitUntil() {
-        return new WebDriverWait(DriverManager.getDriver(), 7);
+        return new WebDriverWait(DriverManager.getDriver(), 20);
     }
 
     public static void moveToElement(WebElement element) {

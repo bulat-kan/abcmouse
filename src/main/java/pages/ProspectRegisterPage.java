@@ -27,7 +27,9 @@ public class ProspectRegisterPage {
     private WebElement btnSubmit;
 
     public void submitEmail(String email){
+        Helper.highlightElement(txtBxEmail);
         txtBxEmail.sendKeys(email);
+        Helper.highlightElement(btnSubmit);
         btnSubmit.click();
     }
 
