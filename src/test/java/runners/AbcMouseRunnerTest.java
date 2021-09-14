@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         features = {
-            "src/main/resources/features"
+            "src/test/resources/features"
         },
         glue = {"step_definitions"},
         dryRun = false
