@@ -13,7 +13,7 @@ public class ReverseArray {
     }
 
     private int[] sortAndReverseIt(int[] array) {
-
+//        int[] array = {1,6,9,8,2,4};
         int smaller;
         for (int i=0; i< array.length; i ++){
             for(int j = i+1; j<array.length;j++){
