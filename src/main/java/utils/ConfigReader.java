@@ -9,7 +9,7 @@ public class ConfigReader {
 
     static {
         String path = "src/test/resources/Configuration.properties";
-        FileInputStream inputStream = null;
+        FileInputStream inputStream;
         try {
             inputStream = new FileInputStream(path);
             properties = new Properties();
