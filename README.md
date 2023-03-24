@@ -24,6 +24,4 @@ run the test in
 
 src/main/java/ReverseArray.java.  
 
-To ABC MOUSE
 
-    Thank you for the apportunity ! 
